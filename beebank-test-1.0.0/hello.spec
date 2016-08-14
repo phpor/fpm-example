@@ -12,17 +12,23 @@ Source0: beebank-test-1.0.0.tar.gz
 test
 
 %prep
+read -p  "prep ok , press enter to continue..."
 %setup -q
+read -p  "setup ok , press enter to continue..."
 
 
 %build
+read -p  "build ok , press enter to continue..."
 %configure
+read -p  "configure ok , press enter to continue..."
 make 
+read -p  "make ok , press enter to continue..."
 
 
 %install
+read -p  "install ok , press enter to continue..."
 %makeinstall
-
+read -p  "makeinstall ok , press enter to continue..."
 
 %files
 /usr/bin/hello
