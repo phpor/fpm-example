@@ -30,7 +30,7 @@ developers to write dynamically generated pages quickly.
 
 %setup
 %build
-./configure --localstatedir=/var --with-config-file-path=/etc/php.ini --with-config-file-scan-dir=/etc/php.d --bindir=/usr/bin --sbindir=/usr/sbin  --mandir=/usr/share/man --enable-fpm  --enable-mbstring=shared --enable-opcache=shared --enable-soap=shared --enable-mysqlnd=shared --with-gd=shared --enable-json=shared --enable-posix=shared --with-iconv=shared --enable-phpdbg --enable-pcntl=shared --enable-bcmath=shared --enable-zip=shared --enable-shmop=shared --enable-ftp=shared --enable-calendar=shared --enable-sockets=shared --with-xml=shared --with-xsl=shared
+./configure --localstatedir=/var --with-config-file-path=/etc --with-config-file-scan-dir=/etc/php.d --bindir=/usr/bin --sbindir=/usr/sbin  --mandir=/usr/share/man --enable-fpm  --enable-mbstring=shared --enable-opcache=shared --enable-soap=shared --enable-mysqlnd=shared --with-gd=shared --enable-json=shared --enable-posix=shared --with-iconv=shared --enable-phpdbg --enable-pcntl=shared --enable-bcmath=shared --enable-zip=shared --enable-shmop=shared --enable-ftp=shared --enable-calendar=shared --enable-sockets=shared --with-xml=shared --with-xsl=shared
 make %{?_smp_mflags}
 
 %install
