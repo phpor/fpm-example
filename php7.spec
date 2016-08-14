@@ -55,5 +55,6 @@ fi
 rm -rf %{buildroot}
 
 %files
+%defattr(-,root,root)
 /
 #%attr(0755,root,root) %{_sysconfdir}/init.d/php-fpm
